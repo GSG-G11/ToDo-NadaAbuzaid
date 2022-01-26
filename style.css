@@ -1,0 +1,61 @@
+/* 
+----- Table Of Contents -----
+1. Fonts
+   1-1 Montserrat
+2. General Style
+3. Image Style
+4. Text Style
+5. Buttons Style
+*/
+
+
+/* ------------------ 1. Fonts ------------------ */
+
+
+/*  1-1 Montserrat  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* ------------------ 2. General Style  ------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* ------------------ 3. Image Style  ------------------ */
+
+.landing-img {
+    width: 380px;
+    height: 265px;
+    margin: 85px 0 67px 0;
+}
+
+
+/* ------------------ 4. Text Style  ------------------ */
+
+.main-text {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+/* ------------------ 5. Buttons Style  ------------------ */
+
+.btn {
+    display: block;
+    background-color: #4E50FB;
+    color: #ffffff;
+    border: 0;
+    padding: 20px;
+    width: 285px;
+    border-radius: 13px;
+    font-size: 20px;
+    margin: 17px auto;
+    font-weight: bold;
+}
