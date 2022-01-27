@@ -25,8 +25,6 @@
 
 - As a User, I should be able to see all Watchlist movies I have.
 
-<br>
-
 # Live link <span id="live"></span>
 
 You can visit our live website [Here](https://gsg-g11.github.io/ToDo-NadaAbuzaid/).
