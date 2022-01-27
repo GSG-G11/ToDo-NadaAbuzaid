@@ -1,1 +1,169 @@
- 
+/* 
+----- Table Of Contents -----
+1. Fonts
+   1-1 Montserrat
+2. General Style
+3. Image Style
+4. Text Style
+5. Buttons Style
+*/
+
+
+/* ------------------ 1. Fonts ------------------ */
+
+
+/*  1-1 Montserrat  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* ------------------ 2. General Style  ------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.page-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+}
+
+.card {
+    width: 350px;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+.card:nth-child(odd) {
+    background-color: #FCF1EC;
+}
+
+.card:nth-child(even) {
+    background-color: #ECF0FC;
+}
+
+i.fad.fa-eye {
+    font-size: 22px;
+    opacity: 0.5;
+    padding: 23px 10px 10px 28px;
+}
+
+.movie-title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 127px;
+}
+
+i.fas.fa-edit {
+    margin-right: 3px;
+}
+
+.movie-desc {
+    padding: 2px 10px 10px 28px;
+}
+
+
+/* --------------------- Footer Style "Add btn & toggle"  ----------------------*/
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    padding: 10px 20px;
+    right: 0px;
+    width: 100%;
+    flex-direction: row;
+    background-color: #f5f5f5;
+}
+
+.add-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: #4E50FB;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.3s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.add-btn:focus {
+    transform: scale(1.1);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.6;
+    padding: 60px;
+    font-weight: bolder;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 1.4em;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#container {
+    width: 280px;
+    height: 36px;
+    margin: auto 22px auto 5px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.inner-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+}
+
+.inner-container:first-child {
+    background: #e9e9e9;
+    color: #a9a9a9;
+}
+
+.inner-container:nth-child(2) {
+    background: #4E50FB;
+    color: white;
+    clip-path: inset(0 50% 0 0);
+    transition: 0.3s cubic-bezier(0, 0, 0, 1);
+}
+
+.toggle {
+    width: 50%;
+    position: absolute;
+    height: inherit;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.toggle p {
+    margin: auto;
+    font-size: 15px;
+}
+
+.toggle:nth-child(1) {
+    right: 0;
+}
