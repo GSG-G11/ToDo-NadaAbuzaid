@@ -8,8 +8,6 @@
 - [Installation](#clone)
 - [Done by](#team)
 
-<br>
-
 # Design <span id="design"></span>
 <img  style="width:550px; height:400px"  src="https://j.top4top.io/p_2218isdcl1.jpg">
 
@@ -27,6 +25,7 @@
 
 - As a User, I should be able to see all Watchlist movies I have.
 
+<br>
 
 # Live link <span id="live"></span>
 
