@@ -38,10 +38,6 @@
      overlay.style.opacity = 0;
  }
 
- //  // edit 
- //  let edit = document.getElementsByClassName("fa-edit")[0];
-
- //  edit.addEventListener("click", openFunEdit);
 
  function openFunEdit() {
      modalEdit.style.display = "block";
@@ -94,6 +90,10 @@
 
      let trashIcon = document.createElement("i");
      trashIcon.setAttribute("class", "fas fa-trash-alt");
+     trashIcon.setAttribute(
+         `onclick`,
+         `del('${allMovies[i][0]}' , 'Movies' , 'movie-${i}') `
+     );
 
      let movieDescr = document.createElement("p");
      movieDescr.setAttribute("class", "movie-desc");
@@ -129,7 +129,7 @@
          let eyeIcon = document.createElement("i");
          eyeIcon.setAttribute("class", "fad fa-eye");
          eyeIcon.setAttribute(`onclick`,
-             `check('${allMovies[i][0]}' , 'task' , 'movie-${i}') `
+             `check('${allMovies[i][0]}' , 'Movies' , 'movie-${i}') `
          );
 
          let movieTitle = document.createElement("p");
@@ -140,6 +140,10 @@
 
          let trashIcon = document.createElement("i");
          trashIcon.setAttribute("class", "fas fa-trash-alt");
+         trashIcon.setAttribute(
+             `onclick`,
+             `del('${allMovies[i][0]}' , 'Movies' , 'movie-${i}') `
+         );
 
          let movieDescr = document.createElement("p");
          movieDescr.setAttribute("class", "movie-desc");
@@ -182,6 +186,9 @@
 
          let trashIcon = document.createElement("i");
          trashIcon.setAttribute("class", "fas fa-trash-alt");
+         trashIcon.setAttribute(`onclick`,
+             `del('${watchedMovies[i][0]}' , 'Watched' , 'movie-${i}') `
+         );
 
          let movieDescr = document.createElement("p");
          movieDescr.setAttribute("class", "movie-desc");
@@ -289,6 +296,10 @@
 
          let trashIcon = document.createElement("i");
          trashIcon.setAttribute("class", "fas fa-trash-alt");
+         trashIcon.setAttribute(
+             `onclick`,
+             `del('${allMovies[i][0]}' , 'Movies' , 'movie-${i}') `
+         );
 
          let movieDescr = document.createElement("p");
          movieDescr.setAttribute("class", "movie-desc");
@@ -316,7 +327,7 @@
          let eyeIcon = document.createElement("i");
          eyeIcon.setAttribute("class", "check-eye fad fa-eye");
          eyeIcon.setAttribute(`onclick`,
-             `check('${watchedMovies[i][0]}' , 'Watched' , 'checked-movie-${i}') `
+             `check('${watchedMovies[i][0]}' , 'Watched' , 'movie-${i}') `
          );
 
          let movieTitle = document.createElement("p");
@@ -327,6 +338,10 @@
 
          let trashIcon = document.createElement("i");
          trashIcon.setAttribute("class", "fas fa-trash-alt");
+         trashIcon.setAttribute(
+             `onclick`,
+             `del('${watchedMovies[i][0]}' , 'Watched' , 'movie-${i}') `
+         );
 
          let movieDescr = document.createElement("p");
          movieDescr.setAttribute("class", "movie-desc");
@@ -345,4 +360,22 @@
 
          watchedMoviesScreen.appendChild(checkedMovie);
      }
+ }
+
+
+ // delete specific movie from localStorage & HTML tree 
+
+ function del(value, storageKey, eleId) {
+     let storage = JSON.parse(localStorage.getItem(storageKey));
+     let index = storage.findIndex((storage) => storage.includes(value));
+     let element = document.getElementById(eleId);
+
+     console.log(element);
+
+     if (index != null && index >= 0) {
+         storage.splice(index, 1);
+         localStorage.setItem(storageKey, JSON.stringify(storage));
+     }
+
+     element.remove();
  }
