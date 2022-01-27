@@ -256,3 +256,10 @@ a:hover {
     opacity: 0;
     pointer-events: none;
 }
+
+
+/* --------------------- Movies Section Style ----------------------*/
+
+.hide {
+    display: none !important;
+}

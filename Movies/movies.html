@@ -12,15 +12,19 @@
 <body>
     <p class="page-title">Movies List</p>
 
-    <div class="card">
-        <!-- <i class="fad fa-check-square"></i> -->
-        <i class="fad fa-eye"></i>
-        <p class="movie-title">Wonder</p>
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
-        <p class="movie-desc">Movie tells the incredibly spiring and heartwarming story of August </p>
-    </div>
+    <!-- <div class="card">
+  <i class="fad fa-check-square"></i> 
+    <i class="fad fa-eye"></i>
+    <p class="movie-title">Wonder</p>
+    <i class="fas fa-edit"></i>
+    <i class="fas fa-trash-alt"></i>
+    <p class="movie-desc">Movie tells the incredibly spiring and heartwarming story of August </p>
+    </div> -->
 
+    <!-- All Movies -->
+    <section id="all-screen"></section>
+    <!-- Watched  Movies -->
+    <section id="watched-screen"> </section>
 
     <!-- Add Modal Box Section -->
     <div class="modal" id="modal">
@@ -30,7 +34,7 @@
         </div>
         <div class="modal-body">
             <form action="#">
-                <input type="text" placeholder="Movie Name" class="movie-name-input">
+                <input type="text" placeholder="Movie Name" id="movie-name-input" class="movie-name-input">
                 <input type="text" id="movie-desc-input" class="movie-desc-input" placeholder="Movie Description">
                 <button id="button">Add</button>
             </form>
