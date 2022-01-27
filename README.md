@@ -9,7 +9,7 @@
 - [Done by](#team)
 
 # Design <span id="design"></span>
-<img  style="width:600px; height:400px"  src="https://j.top4top.io/p_2218isdcl1.jpg">
+<img  style="width:630px; height:400px"  src="https://j.top4top.io/p_2218isdcl1.jpg">
 
 <br>
 
