@@ -9,7 +9,7 @@
  fontAwesome();
 
 
- // **** Toggle button function ****
+ // Toggle button function
 
  var toggle = document.getElementById("container");
  var toggleContainer = document.getElementById("toggle-container");
@@ -35,3 +35,44 @@
      }
      console.log(toggleNumber ? "done" : "all");
  });
+
+
+ // **** open and close modal box ****
+ let modal = document.getElementById("modal");
+ let modalEdit = document.getElementById("edit-modal");
+ let overlay = document.getElementById("overlay");
+
+ // open
+
+ let openAdd = document.getElementsByClassName("add-btn")[0];
+
+ openAdd.addEventListener("click", openFun);
+
+ function openFun() {
+     modal.style.display = "block";
+     overlay.style.opacity = 1;
+ }
+
+ // close
+
+ let closeAdd = document.getElementsByClassName("close-btn")[0];
+ let closeUpdate = document.getElementsByClassName("close-btn")[1];
+
+ closeAdd.addEventListener("click", closeFun);
+ closeUpdate.addEventListener("click", closeFun);
+
+ function closeFun() {
+     modal.style.display = "none";
+     modalEdit.style.display = "none";
+     overlay.style.opacity = 0;
+ }
+
+ // edit 
+ let edit = document.getElementsByClassName("fa-edit")[0];
+
+ edit.addEventListener("click", openFunEdit);
+
+ function openFunEdit() {
+     modalEdit.style.display = "block";
+     overlay.style.opacity = 1;
+ }

@@ -11,14 +11,6 @@
 
 <body>
     <p class="page-title">Movies List</p>
-    <div class="card">
-        <!-- <i class="fad fa-check-square"></i> -->
-        <i class="fad fa-eye"></i>
-        <p class="movie-title">Wonder</p>
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
-        <p class="movie-desc">Movie tells the incredibly spiring and heartwarming story of August </p>
-    </div>
 
     <div class="card">
         <!-- <i class="fad fa-check-square"></i> -->
@@ -29,42 +21,39 @@
         <p class="movie-desc">Movie tells the incredibly spiring and heartwarming story of August </p>
     </div>
 
-    <div class="card">
-        <!-- <i class="fad fa-check-square"></i> -->
-        <i class="fad fa-eye"></i>
-        <p class="movie-title">Wonder</p>
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
-        <p class="movie-desc">Movie tells the incredibly spiring and heartwarming story of August </p>
+
+    <!-- Add Modal Box Section -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <p class="modal-title">Enjoy!!!</p>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="#">
+                <input type="text" placeholder="Movie Name" class="movie-name-input">
+                <input type="text" id="movie-desc-input" class="movie-desc-input" placeholder="Movie Description">
+                <button id="button">Add</button>
+            </form>
+        </div>
     </div>
 
-    <div class="card">
-        <!-- <i class="fad fa-check-square"></i> -->
-        <i class="fad fa-eye"></i>
-        <p class="movie-title">Wonder</p>
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
-        <p class="movie-desc">Movie tells the incredibly spiring and heartwarming story of August </p>
+    <!-- Edit Modal Box Section -->
+    <div class="modal" id="edit-modal">
+        <div class="modal-header">
+            <p class="modal-title">Enjoy!!!</p>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="#">
+                <input type="text" placeholder="Movie Name" class="movie-name-input">
+                <input type="text" id="movie-desc-input" class="movie-desc-input" placeholder="Movie Description">
+                <button id="button">Update</button>
+            </form>
+        </div>
     </div>
 
-    <div class="card">
-        <!-- <i class="fad fa-check-square"></i> -->
-        <i class="fad fa-eye"></i>
-        <p class="movie-title">Wonder</p>
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
-        <p class="movie-desc">Movie tells the incredibly spiring and heartwarming story of August </p>
-    </div>
-
-    <div class="card">
-        <!-- <i class="fad fa-check-square"></i> -->
-        <i class="fad fa-eye"></i>
-        <p class="movie-title">Wonder</p>
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash-alt"></i>
-        <p class="movie-desc">Movie tells the incredibly spiring and heartwarming story of August </p>
-    </div>
-
+    <!-- Overlay -->
+    <div id="overlay"></div>
 
     <!-- Footer -->
     <footer>
