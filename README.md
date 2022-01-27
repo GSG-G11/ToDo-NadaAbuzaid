@@ -8,10 +8,8 @@
 - [Installation](#clone)
 - [Done by](#team)
 
-<br>
-
 # Design <span id="design"></span>
-<img  style="width:450px"  src="https://j.top4top.io/p_2218isdcl1.jpg">
+<img  style="width:500px; height:300px"  src="https://j.top4top.io/p_2218isdcl1.jpg">
 
 <br>
 # User Stories <span id="Stories"></span>
@@ -28,11 +26,6 @@
 
 <br>
 
-**Navigation Journy**
-
-<img  style="height:300px"  src="#">
-
-<br>
 
 # Live link <span id="live"></span>
 
